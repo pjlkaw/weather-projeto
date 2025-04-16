@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*fonts:
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+.color-1 {color: #F88379;}
+.color-2 {color: #FF7F50;}
+.color-3 {color: #B87333;}
+.color-4 {color: #CC5500;}
+.color-5 {color: #CD7F32;}
+.color-6 {color: #FFBF00;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
