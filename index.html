@@ -8,31 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Weather View</h1>
-        <input class="search-input" placeholder="Digite o nome da cidade" type="text">
-        <i class="fa-solid fa-magnifying-glass"></i>    
-    </header>
-
-    <main>
-        <div class="wheather_city">
-            <h2 id="temp">0º</h2>
-            <h3 id="city">Cidade</h2>
-        </div>
-
-        <div class="wheather_info">
-            <div class="wheather_icon">            </div>
-            <div class="wheather_description">
-                <h4>Descrição</h2>
-                <p></p>
+    <div class="master_main">
+        <header>
+            <h1>Weather View</h1>
+            <input id="search_input" placeholder="Digite o nome da cidade" type="text">
+            <div class="search_button">
+                <i class="fa-solid fa-magnifying-glass"></i>    
             </div>
-            <div class="wheather_humidity">
-                <h4>Umidade</h2>
-                <p></p>    
+        </header>
+    
+        <main>
+            <div class="wheather_city">
+                <h3 id="city">Cidade</h2>
+                <h2 id="temp">0º</h2>
+                <div class="buttons">
+                    <button>Cº</button>
+                    <button>Fº</button>
+                </div>
             </div>
-        </div>
-
-    </main>
-
+    
+            <div class="weather_info">
+                <div class="weather_icon">            </div>
+                <div class="weather_description">
+                    <h4>Descrição</h2>
+                    <p>aa</p>
+                </div>
+                <div class="weather_humidity">
+                    <h4>Umidade</h2>
+                    <p>aa</p>    
+                </div>
+            </div>
+    
+        </main>
+    </div>
 </body>
 </html>

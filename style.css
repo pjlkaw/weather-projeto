@@ -5,15 +5,138 @@ font-family: 'Nunito Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
 */
 
-.color-1 {color: #F88379;}
-.color-2 {color: #FF7F50;}
-.color-3 {color: #B87333;}
-.color-4 {color: #CC5500;}
-.color-5 {color: #CD7F32;}
-.color-6 {color: #FFBF00;}
+:root {
+    --rosa-salmao: #F88379;
+    --laranja: #FF7F50;
+    --marrom: #B87333;
+    --marrom-laranja: #CC5500;
+    --marrom-: #CD7F32;
+    --amarelo: #FFBF00;
+}
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, var(--marrom), var(--marrom-laranja));
+}
+
+.master_main {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    border-radius: 15px;
+    gap: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+
+    background-color: var(--laranja);
+}
+
+.master_main header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    gap: 10px;
+    box-shadow: 0px 5px 3px var(--marrom-laranja);
+    height: 50px;
+    border-radius: 5px;
+}
+
+.master_main main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 0;
+}
+
+/* ITENS HEADER */
+.master_main header h1 {
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 130px;
+    height: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10px;
+}
+
+.search_button {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.search_button:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* ITENS MAIN */
+.wheather_city {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 0px 5px 3px var(--marrom-laranja);
+}
+
+#temp {
+    font-size: 30px;
+    transition: o,400ms ease-in-out;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* ITENS INFO */
+.weather_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0;
+    box-shadow: 0px 5px 3px var(--marrom-laranja);
+    text-wrap: wrap;
+}
+
 
